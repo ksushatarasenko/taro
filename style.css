@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: rgb(209, 208, 208);
+    /* height: auto; */
+    margin-bottom: 5px;
+}
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+header ul{
+    display: flex;
+    gap: 4%;
+    padding: 2%;
+    list-style-type: none;
+}
+
+.li a{
+    font-size: 24px;
+    color:bisque;
+}
+.ulhead{
+   display: flex;
+   flex-wrap: wrap;
+}
+/* END HEADER */
+.two{
+    display: flex;
+    gap: 5%;
+    padding: 1%;
+}
+.box{
+    padding: 1%;
+}
+.flexColumn{
+    display: flex;
+}
+/* IMAGE */
+.clickable-img {
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+  }
+  .clickable-img.scaled {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3); /* Центрируем + увеличиваем */
+    z-index: 1000; /* Поднимаем выше всего */
+  }
+  /* UL */
+  ul{
+    margin-left: 20%;
+    font-size: 20px;
+  }
