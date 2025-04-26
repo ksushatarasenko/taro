@@ -45,6 +45,7 @@ header ul{
 }
 .flexColumn{
     display: flex;
+    flex-wrap: wrap;
 }
 /* IMAGE */
 .clickable-img {
