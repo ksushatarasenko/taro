@@ -34,3 +34,8 @@ p{
     font-size: 18px;
     margin: 5px auto;
 }
+.pTitle{
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+}
