@@ -67,3 +67,10 @@ header ul{
     margin-left: 20%;
     font-size: 20px;
   }
+  .image{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .image>img{
+    width: 100%;
+  }
