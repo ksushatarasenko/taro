@@ -59,7 +59,7 @@ header ul{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(3); /* Центрируем + увеличиваем */
+    transform: translate(-50%, -50%) scale(2.6); /* Центрируем + увеличиваем */
     z-index: 1000; /* Поднимаем выше всего */
   }
   /* UL */
@@ -74,3 +74,82 @@ header ul{
   .image>img{
     width: 100%;
   }
+  .box>a>img{
+    border-radius: 25px;
+  }
+
+  /* -------------- POKAZ OTWETA OPTIMA -------------*/
+.hint2-container {
+    
+    background-color: rgb(230, 222, 222);;
+    border-radius: 10px;
+    border: 1px solid #b9d6f3;
+    padding: 5px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+ }
+ 
+ /* Заголовок блока */
+ .hint2-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    color: #2d2d2d;
+ }
+ 
+ /* Левый значок (иконка) через ::before */
+ .hint2-header::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    /* background-image: url('https://goroskop365.ru/img/gadaniya/taro/mini/tuz-kubkov.jpg'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+ }
+ 
+ /* Стрелка справа через ::after */
+ .hint2-header::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('./strelkaVerch.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+ }
+ 
+ /* Контент с текстом */
+ .hint2-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 2px 0 2px;
+    opacity: 0; /* Для плавного появления и исчезновения текста */
+    transition: opacity 0.3s ease-in-out, max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+ }
+ .hint2-content p{
+    /* font-size: 18px; */
+ }
+ 
+ /* Раскрытие блока */
+ .hint2-container.active .hint2-content {
+    padding: 0 2px 5px 2px;
+    max-height: 1000px; /* Достаточно для раскрытия текста */
+    opacity: 1; /* Плавное появление */
+    
+    max-width: 100%;
+ }
+ /* END OPTIMA */

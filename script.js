@@ -6,3 +6,8 @@ images.forEach(img => {
     this.classList.toggle('scaled');
   });
 });
+
+// кнопка для подсказки
+function toggleHints(element) {
+  element.classList.toggle("active");
+}
